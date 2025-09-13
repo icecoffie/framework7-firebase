@@ -205,3 +205,7 @@ document.querySelector(".to-bottom").addEventListener("click", e => {
     e.preventDefault();
     document.getElementById("footer").scrollIntoView({ behavior: "smooth" });
   });
+
+document.querySelectorAll('.flip-card').forEach(card => {
+  card.addEventListener('click', () => card.classList.toggle('is-flipped'));
+});
